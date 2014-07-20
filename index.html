@@ -5,130 +5,194 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <head>
 
-	<!-- Basic Page Needs
-  ================================================== -->
-	<meta charset="utf-8">
-	<title>Your Page Title Here :)</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+<meta charset="utf-8">
 
-	<!-- Mobile Specific Metas
-  ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Tracy and Bryan</title>
 
-	<!-- CSS
-  ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
-	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
+<meta name="description" content="">
+<meta name="author" content="">
 
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+<link rel="stylesheet" href="stylesheets/base.css">
+<link rel="stylesheet" href="stylesheets/skeleton.css">
+<link rel="stylesheet" href="stylesheets/layout.css">
 
-	<style>
-		html {
-		 height: 100%;
-		}
+<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
-		body {
-		 height: 100%;
-		}
+<style>
+	html {
+		height: 100%;
+	}
 
-		.container {
-			width: 100%;
-		}
+	body {
+		height: 100%;
+		text-align: center;
+	}
 
-		.nav {
-			height: 60px;
-	  	background-color: white;
-	  	position: absolute;
-	  	bottom: 0;
-	  	margin: 0px;
-	  	width: 100%;
-	  	z-index: 100;
-	  	transition: .25s;
-		}
+	p {
+		font-size: 20px;
+		line-height: 28px;
+		font-family: 'Lora', serif;
+	}
 
-		.splash {
-			height: 100%;
-			width: 100%;
-			background: url(images/header.jpg);
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-		  	-o-background-size: cover;
-			background-size: cover;
-		}
+	h1 p, h2, h3 {
+		font-family: 'Cabin', sans-serif;
+	}
 
-		.stuck {
-			position: fixed;
-			top:0;
-		}
+	h1 p {
+		font-size: 28px;
+		line-height: 40px;
+		margin: 0;
+	}
 
-		.sticky-wrapper {
-			height: 60px;
-		}
-	</style>
+	header {
+		margin-bottom: 30px;
+	}
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="waypoints.min.js"></script>
-	<script type="text/javascript" src="waypoints-sticky.min.js"></script>
+/*	.container {
+		width: 100%;
+	}*/
 
-	<script>
-		$(function() {
-			$('.nav').waypoint('sticky', {
-				offset: 60
-			});
+	section {
+		margin-bottom: 50px;
+	}
+
+	.nav {
+		height: 60px;
+  	background-color: white;
+  	position: absolute;
+  	bottom: 0;
+  	margin: 0px;
+  	width: 100%;
+  	z-index: 100;
+  	transition: .25s;
+	}
+
+	.splash {
+		height: 100%;
+		width: 100%;
+		background: url(images/wip.png);
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+	  	-o-background-size: cover;
+		background-size: cover;
+	}
+
+	.stuck {
+		position: fixed;
+		top:0;
+	}
+
+	.sticky-wrapper {
+		height: 60px;
+	}
+
+	.rsvp {
+		background-color: lightblue;
+		border-radius: 5px;
+		font-size: 30px;
+		line-height: 100px;
+		width: 300px;
+		height: 100px;
+		color: white;
+		display: block;
+	}
+
+	a.rsvp:link, a.rsvp:visited, a.rsvp:hover, a.rsvp:active {
+		text-decoration: none;
+		color: white;
+	}
+
+</style>
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- <link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"> -->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="waypoints.min.js"></script>
+<script type="text/javascript" src="waypoints-sticky.min.js"></script>
+
+<script>
+	$(function() {
+		$('.nav').waypoint('sticky', {
+			offset: 60
 		});
-	</script>
+
+		$(function() {
+			$('#days-until').text(Math.round((new Date(2015, 4, 23) - new Date()) / 1000/60/60/24));
+		});
+	});
+</script>
 
 </head>
 <body>
 
-	<div id="splash" class="splash section">
-	</div>
+<div id="splash" class="splash section">
+</div>
 
-	<div class="nav">
-		WEDDING RSVP NYC REGISTRY
-	</div>
+<div class="nav">
+	WEDDING RSVP NYC REGISTRY CONTACT
+</div>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate sed quam quis ornare. Aenean lacinia porta justo nec congue. Phasellus auctor rutrum tortor, nec ultrices nunc consequat ac. Maecenas eu ipsum sem. Pellentesque ullamcorper porta risus, nec semper sapien consectetur commodo. Maecenas egestas facilisis tempor. Sed faucibus luctus erat.
+<div class="container">
 
-Etiam ut ultricies tortor. Fusce nec eros felis. Fusce orci dui, sodales eget accumsan quis, porta eu lectus. Nullam ultrices sit amet libero et fermentum. Nunc vehicula non elit sit amet rutrum. Ut fermentum tellus eu placerat dignissim. Phasellus quis consectetur sapien. Quisque sit amet nisi imperdiet, suscipit mauris sit amet, viverra odio. Pellentesque ac dolor non nisl tempor feugiat id a dolor. Nulla quis lorem sagittis, dapibus ligula at, eleifend risus. Suspendisse velit mauris, rutrum in nunc nec, congue vehicula felis. Morbi pretium dictum neque in rhoncus. Vivamus ac imperdiet elit, eu eleifend risus. Maecenas tristique porta sollicitudin. Sed vehicula tincidunt elit, eget egestas erat consectetur ut. Vestibulum at est sagittis, sodales eros nec, egestas est.
+	<section>
+		<header>
+			<h1>
+				<p>SATURDAY MAY 23, 2015</p>
+				<p>6 PM</p>
+				<p><a href="https://www.google.com/maps/place/Music+Hall+of+Williamsburg/@40.719229,-73.961668,17z/data=!3m1!4b1!4m2!3m1!1s0x89c259671aa700c1:0xa1f6d36ce92c82c">MUSIC HALL OF WILLIAMSBURG</a></p>
+				<p>BROOKLYN, NY</p>
+			</h1>
+		</header>
+	</section>
 
-Etiam imperdiet sagittis ultricies. Aliquam erat volutpat. Nullam massa eros, commodo id justo ut, volutpat vestibulum tellus. In ut adipiscing quam. Fusce eu commodo erat, ac imperdiet erat. Vestibulum vitae odio turpis. Ut bibendum arcu tempor augue placerat imperdiet. Pellentesque iaculis placerat commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur massa felis, venenatis ac velit bibendum, tincidunt rutrum ligula. Sed tincidunt scelerisque tortor, non pharetra eros vestibulum laoreet. Curabitur nulla urna, malesuada id elementum non, fringilla nec mi. Aenean facilisis interdum odio, vitae condimentum est mattis eu. Nulla suscipit feugiat dolor. Nulla in justo commodo, volutpat orci a, dapibus libero.
+	<section>
+		<center><a href="https://docs.google.com/forms/d/1vNTriga5L7dqHpL9xmqx00hSYbL2xqv1i7KCLAnBe14/viewform" class="rsvp">PLEASE RSVP HERE</a></center>
+	</section>
 
-Donec sit amet luctus elit, sit amet consectetur ante. Duis dictum quis nulla et hendrerit. Nam sodales ornare erat at eleifend. Praesent rutrum, dui quis ornare tempus, mi lorem convallis nisi, a auctor neque tellus at lorem. Curabitur hendrerit nisi nulla, faucibus blandit leo hendrerit sed. Quisque nisi lacus, rutrum ut varius nec, accumsan et massa. Proin pellentesque quam ipsum, a rutrum nisl lobortis id. Cras auctor dictum rutrum. Duis at mi ut elit varius dictum. Etiam pretium vulputate tempor. Nunc ac ante lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nec mi vel diam sodales adipiscing eu id mauris. Maecenas at viverra dolor. Curabitur adipiscing fermentum eros congue ultricies. Nulla hendrerit et justo sit amet lobortis.
+	<section>
+		<h2>NEW YORK CITY</h2>
 
-Cras a metus consectetur, convallis erat ac, bibendum risus. Nullam sodales sollicitudin lobortis. Maecenas at purus nec ante aliquet imperdiet non eu justo. Vivamus mattis pretium justo bibendum dignissim. In tempus a tortor vel eleifend. Fusce ornare lacinia eros, at convallis eros consequat vitae. Morbi tempor sapien odio. Morbi consequat gravida leo, eget mollis augue interdum sit amet. Duis hendrerit aliquam diam ut fermentum. Duis enim eros, pellentesque non faucibus sed, viverra at purus. Aenean condimentum malesuada purus. Ut scelerisque, turpis quis imperdiet cursus, orci ante semper est, eget malesuada tellus neque at odio. Integer consectetur molestie elit non hendrerit. Aenean turpis nibh, mattis quis aliquet ac, auctor vel lectus.
+		<h3>TRANSPORTATION</h3>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate sed quam quis ornare. Aenean lacinia porta justo nec congue. Phasellus auctor rutrum tortor, nec ultrices nunc consequat ac. Maecenas eu ipsum sem. Pellentesque ullamcorper porta risus, nec semper sapien consectetur commodo. Maecenas egestas facilisis tempor. Sed faucibus luctus erat.
+		<p>Cabs are very prevalent in both Manhattan and Williamsburg, but to make sure you’re never stuck without a ride, we recommend downloading and creating an account with the free <a href="https://www.uber.com">Uber</a> app. It allows you to easily hail vehicles of all kinds right from your smartphone, like magic.
 
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9449204580355!2d-73.96166800000005!3d40.71922899999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259671aa700c1%3A0xa1f6d36ce92c82c!2sMusic+Hall+of+Williamsburg!5e0!3m2!1sen!2sus!4v1402884814496" width="600" height="450" frameborder="0" style="border:0"></iframe>
+		<p>The Music Hall is also right off of the <a href="https://www.google.com/maps/dir/Union+Square,+New+York,+NY/Music+Hall+of+Williamsburg,+66+N+6th+St,+Brooklyn,+NY+11211/@40.7291969,-73.9743045,14z/am=t/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x89c259989e14aa8b:0xcd00afc9db20caa4!2m2!1d-73.9910835!2d40.7358633!1m5!1m1!1s0x89c259671aa700c1:0xa1f6d36ce92c82c!2m2!1d-73.961668!2d40.719229!3e3">L subway line</a>, accesible from anywhere along 14th St. in Manhattan (just one stop into Brooklyn followed by a six minute walk). Please make sure that <a href="http://istheltrainfucked.com">it's running</a> first, however...</p>
 
-Etiam ut ultricies tortor. Fusce nec eros felis. Fusce orci dui, sodales eget accumsan quis, porta eu lectus. Nullam ultrices sit amet libero et fermentum. Nunc vehicula non elit sit amet rutrum. Ut fermentum tellus eu placerat dignissim. Phasellus quis consectetur sapien. Quisque sit amet nisi imperdiet, suscipit mauris sit amet, viverra odio. Pellentesque ac dolor non nisl tempor feugiat id a dolor. Nulla quis lorem sagittis, dapibus ligula at, eleifend risus. Suspendisse velit mauris, rutrum in nunc nec, congue vehicula felis. Morbi pretium dictum neque in rhoncus. Vivamus ac imperdiet elit, eu eleifend risus. Maecenas tristique porta sollicitudin. Sed vehicula tincidunt elit, eget egestas erat consectetur ut. Vestibulum at est sagittis, sodales eros nec, egestas est.
+		<h3>HOTELS</h3>
 
-Etiam imperdiet sagittis ultricies. Aliquam erat volutpat. Nullam massa eros, commodo id justo ut, volutpat vestibulum tellus. In ut adipiscing quam. Fusce eu commodo erat, ac imperdiet erat. Vestibulum vitae odio turpis. Ut bibendum arcu tempor augue placerat imperdiet. Pellentesque iaculis placerat commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur massa felis, venenatis ac velit bibendum, tincidunt rutrum ligula. Sed tincidunt scelerisque tortor, non pharetra eros vestibulum laoreet. Curabitur nulla urna, malesuada id elementum non, fringilla nec mi. Aenean facilisis interdum odio, vitae condimentum est mattis eu. Nulla suscipit feugiat dolor. Nulla in justo commodo, volutpat orci a, dapibus libero.
+		<h3>FOOD</h3>
 
-Donec sit amet luctus elit, sit amet consectetur ante. Duis dictum quis nulla et hendrerit. Nam sodales ornare erat at eleifend. Praesent rutrum, dui quis ornare tempus, mi lorem convallis nisi, a auctor neque tellus at lorem. Curabitur hendrerit nisi nulla, faucibus blandit leo hendrerit sed. Quisque nisi lacus, rutrum ut varius nec, accumsan et massa. Proin pellentesque quam ipsum, a rutrum nisl lobortis id. Cras auctor dictum rutrum. Duis at mi ut elit varius dictum. Etiam pretium vulputate tempor. Nunc ac ante lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nec mi vel diam sodales adipiscing eu id mauris. Maecenas at viverra dolor. Curabitur adipiscing fermentum eros congue ultricies. Nulla hendrerit et justo sit amet lobortis.
+		<h3>DRINK</h3>
 
-Cras a metus consectetur, convallis erat ac, bibendum risus. Nullam sodales sollicitudin lobortis. Maecenas at purus nec ante aliquet imperdiet non eu justo. Vivamus mattis pretium justo bibendum dignissim. In tempus a tortor vel eleifend. Fusce ornare lacinia eros, at convallis eros consequat vitae. Morbi tempor sapien odio. Morbi consequat gravida leo, eget mollis augue interdum sit amet. Duis hendrerit aliquam diam ut fermentum. Duis enim eros, pellentesque non faucibus sed, viverra at purus. Aenean condimentum malesuada purus. Ut scelerisque, turpis quis imperdiet cursus, orci ante semper est, eget malesuada tellus neque at odio. Integer consectetur molestie elit non hendrerit. Aenean turpis nibh, mattis quis aliquet ac, auctor vel lectus.
+	</section>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vulputate sed quam quis ornare. Aenean lacinia porta justo nec congue. Phasellus auctor rutrum tortor, nec ultrices nunc consequat ac. Maecenas eu ipsum sem. Pellentesque ullamcorper porta risus, nec semper sapien consectetur commodo. Maecenas egestas facilisis tempor. Sed faucibus luctus erat.
+	<section>
+		<h2>REGISTRY</h2>
+	</section>
 
-Etiam ut ultricies tortor. Fusce nec eros felis. Fusce orci dui, sodales eget accumsan quis, porta eu lectus. Nullam ultrices sit amet libero et fermentum. Nunc vehicula non elit sit amet rutrum. Ut fermentum tellus eu placerat dignissim. Phasellus quis consectetur sapien. Quisque sit amet nisi imperdiet, suscipit mauris sit amet, viverra odio. Pellentesque ac dolor non nisl tempor feugiat id a dolor. Nulla quis lorem sagittis, dapibus ligula at, eleifend risus. Suspendisse velit mauris, rutrum in nunc nec, congue vehicula felis. Morbi pretium dictum neque in rhoncus. Vivamus ac imperdiet elit, eu eleifend risus. Maecenas tristique porta sollicitudin. Sed vehicula tincidunt elit, eget egestas erat consectetur ut. Vestibulum at est sagittis, sodales eros nec, egestas est.
+	<section>
+		<h2>CONTACT</h2>
 
-Etiam imperdiet sagittis ultricies. Aliquam erat volutpat. Nullam massa eros, commodo id justo ut, volutpat vestibulum tellus. In ut adipiscing quam. Fusce eu commodo erat, ac imperdiet erat. Vestibulum vitae odio turpis. Ut bibendum arcu tempor augue placerat imperdiet. Pellentesque iaculis placerat commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur massa felis, venenatis ac velit bibendum, tincidunt rutrum ligula. Sed tincidunt scelerisque tortor, non pharetra eros vestibulum laoreet. Curabitur nulla urna, malesuada id elementum non, fringilla nec mi. Aenean facilisis interdum odio, vitae condimentum est mattis eu. Nulla suscipit feugiat dolor. Nulla in justo commodo, volutpat orci a, dapibus libero.
+		<p>Please feel free to reach out to <a href="mailto:bryan@irace.me">Bryan</a> or <a href="mailto:tdalick@gmail.com">Tracy</a> if you have any questions.</p>
 
-Donec sit amet luctus elit, sit amet consectetur ante. Duis dictum quis nulla et hendrerit. Nam sodales ornare erat at eleifend. Praesent rutrum, dui quis ornare tempus, mi lorem convallis nisi, a auctor neque tellus at lorem. Curabitur hendrerit nisi nulla, faucibus blandit leo hendrerit sed. Quisque nisi lacus, rutrum ut varius nec, accumsan et massa. Proin pellentesque quam ipsum, a rutrum nisl lobortis id. Cras auctor dictum rutrum. Duis at mi ut elit varius dictum. Etiam pretium vulputate tempor. Nunc ac ante lectus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis nec mi vel diam sodales adipiscing eu id mauris. Maecenas at viverra dolor. Curabitur adipiscing fermentum eros congue ultricies. Nulla hendrerit et justo sit amet lobortis.
+		<p> We can’t wait to see you in only <span id="days-until"></span> days!</p>
+	</section>
 
+	<footer>
+		
+	</footer>
+
+</div>
 
 </body>
 </html>
