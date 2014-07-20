@@ -17,6 +17,85 @@
 /* #Site Styles
 ================================================== */
 
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	text-align: center;
+}
+
+p {
+	font-size: 20px;
+	line-height: 28px;
+	font-family: 'Lora', serif;
+}
+
+h1 p, h2, h3 {
+	font-family: 'Cabin', sans-serif;
+}
+
+h1 p {
+	font-size: 28px;
+	line-height: 40px;
+	margin: 0;
+}
+
+header {
+	margin-bottom: 30px;
+}
+
+section {
+	margin-bottom: 50px;
+}
+
+.nav {
+	height: 60px;
+	background-color: white;
+	position: absolute;
+	bottom: 0;
+	margin: 0px;
+	width: 100%;
+	z-index: 100;
+	transition: .25s;
+}
+
+.splash {
+	height: 100%;
+	width: 100%;
+	background: url(images/wip.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+}
+
+.stuck {
+	position: fixed;
+	top:0;
+}
+
+.sticky-wrapper {
+	height: 60px;
+}
+
+.rsvp {
+	background-color: lightblue;
+	border-radius: 5px;
+	font-size: 30px;
+	line-height: 100px;
+	width: 300px;
+	height: 100px;
+	color: white;
+	display: block;
+}
+
+a.rsvp:link, a.rsvp:visited, a.rsvp:hover, a.rsvp:active {
+	text-decoration: none;
+	color: white;
+}
+
 /* #Page Styles
 ================================================== */
 
@@ -30,7 +109,11 @@
 	@media only screen and (min-width: 768px) and (max-width: 959px) {}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+		.container {
+			width: 100%;
+		}
+	}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {}

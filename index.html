@@ -9,8 +9,8 @@
 
 <title>Tracy and Bryan</title>
 
-<meta name="description" content="">
-<meta name="author" content="">
+<meta name="description" content="Tracy and Bryan">
+<meta name="author" content="Bryan Irace">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -21,116 +21,19 @@
 <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
-<style>
-	html {
-		height: 100%;
-	}
-
-	body {
-		height: 100%;
-		text-align: center;
-	}
-
-	p {
-		font-size: 20px;
-		line-height: 28px;
-		font-family: 'Lora', serif;
-	}
-
-	h1 p, h2, h3 {
-		font-family: 'Cabin', sans-serif;
-	}
-
-	h1 p {
-		font-size: 28px;
-		line-height: 40px;
-		margin: 0;
-	}
-
-	header {
-		margin-bottom: 30px;
-	}
-
-/*	.container {
-		width: 100%;
-	}*/
-
-	section {
-		margin-bottom: 50px;
-	}
-
-	.nav {
-		height: 60px;
-  	background-color: white;
-  	position: absolute;
-  	bottom: 0;
-  	margin: 0px;
-  	width: 100%;
-  	z-index: 100;
-  	transition: .25s;
-	}
-
-	.splash {
-		height: 100%;
-		width: 100%;
-		background: url(images/wip.png);
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-	  	-o-background-size: cover;
-		background-size: cover;
-	}
-
-	.stuck {
-		position: fixed;
-		top:0;
-	}
-
-	.sticky-wrapper {
-		height: 60px;
-	}
-
-	.rsvp {
-		background-color: lightblue;
-		border-radius: 5px;
-		font-size: 30px;
-		line-height: 100px;
-		width: 300px;
-		height: 100px;
-		color: white;
-		display: block;
-	}
-
-	a.rsvp:link, a.rsvp:visited, a.rsvp:hover, a.rsvp:active {
-		text-decoration: none;
-		color: white;
-	}
-
-</style>
-
 <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/waypoints.min.js"></script>
+<script type="text/javascript" src="scripts/waypoints-sticky.min.js"></script>
+<script type="text/javascript" src="scripts/scripts.js"></script>
 
 <!-- <link rel="shortcut icon" href="images/favicon.ico">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"> -->
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="waypoints.min.js"></script>
-<script type="text/javascript" src="waypoints-sticky.min.js"></script>
-
-<script>
-	$(function() {
-		$('.nav').waypoint('sticky', {
-			offset: 60
-		});
-
-		$(function() {
-			$('#days-until').text(Math.round((new Date(2015, 4, 23) - new Date()) / 1000/60/60/24));
-		});
-	});
-</script>
 
 </head>
 <body>
