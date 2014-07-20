@@ -64,7 +64,7 @@ section {
 .splash {
 	height: 100%;
 	width: 100%;
-	background: url(images/wip.png);
+	background: url(../images/wip.png);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
   	-o-background-size: cover;
