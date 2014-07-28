@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  text-align: center;
+}
+
+.nav {
+  height: 60px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  margin: 0px;
+  width: 100%;
+  z-index: 100;
+  transition: .25s;
+}
+
+.splash {
+  height: 100%;
+  width: 100%;
+  background: url(../images/wip.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+    -o-background-size: cover;
+  background-size: cover;
+}
+
+.stuck {
+  position: fixed;
+  top:0;
+}
+
+.sticky-wrapper {
+  height: 60px;
+}
+
+
+
+
+
+
+
+
+.date {
+  height: 220px;
+  background-color: #cdb722;
+  color: white;
+
+  font-size: 80px;
+  padding: 10px 0 10px 0;
+  line-height: 90px;
+}
+
+.date, .venue, .time {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.venue, .time {
+  height: 100px;
+}
+
+.venue {
+  background-color: black;
+  color: pink;
+  margin-bottom: 20px;
+  line-height: 40px;
+  padding: 10px 0 10px 0;
+  font-size: 30px;
+}
+
+.venue p {
+  margin: 0;
+}
+
+.time {
+  background-color: green;
+  color: white;
+  font-size: 70px;
+  line-height: 100px;
+}
