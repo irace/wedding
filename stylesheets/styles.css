@@ -14,14 +14,6 @@ body {
   color: #e67a90;
 }
 
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: black;
-  text-decoration: underline;
-}
-
 /* Splash */
 
 .splash {
@@ -74,7 +66,7 @@ a:active {
 .nav a:visited,
 .nav a:hover,
 .nav a:active {
-  color: black;
+  color: #272727;
 }
 
 .nav-item {
@@ -130,7 +122,7 @@ a:active {
   font-family: 'Pacifico', cursive;
 
   background-color: #F1C8C8;
-  color: black;
+  color: #272727;
 
   margin-bottom: 6px;
 }
@@ -153,6 +145,11 @@ a:active {
   height: 868px;
 }
 
+.hashtag-photo img {
+  max-width: 50px;
+  margin-top: -6px;
+}
+
 .hashtag-photo .text-container {
   position: absolute;
   top: 17%;
@@ -168,9 +165,42 @@ a:active {
 
   background-color: white;
   opacity: 0.5;
-  color: black;
+  color: #373737;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+}
+
+.instagram-photo, 
+.instagram-all-link {
+  background-color: lightgray;
+  font-size: 22px;
+  color: #545454;
+}
+
+.instagram-empty p {
+  padding: 20px;
+
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.instagram-all-link:hover {
+  background-color: #c5c5c5;
+}
+
+.instagram-photo img {
+  height: 100%;
+  width: 100%;
+}
+
+.instagram-empty {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+.arrow {
+  font-size: 42px;
 }
 
 /* Registry */
@@ -239,6 +269,14 @@ a:active {
 
 .attribution {
   margin: 20px 0 20px 0;
+}
+
+.attribution a:link,
+.attribution a:visited,
+.attribution a:hover,
+.attribution a:active {
+  color: #272727;
+  text-decoration: underline;
 }
 
 /* Overrides */
