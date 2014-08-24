@@ -14,7 +14,7 @@ function attach_nav_scroll_handlers() {
     e.preventDefault();
 
     var target = $(this).attr("href");
-    //animation
+
     $('body, html').animate({ scrollTop: $(target).offset().top }, 700, 'easeInOutQuart', function () {});
   });  
 }
