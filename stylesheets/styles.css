@@ -147,27 +147,26 @@ body {
 
 .hashtag-photo img {
   max-width: 50px;
+  max-width: 20px;
   margin-top: -6px;
 }
 
 .hashtag-photo .text-container {
-  position: absolute;
-  top: 17%;
-
-  width: 550px;
-  left: 50%;
-  margin-left: -275px;
-
-  height: 110px;
-  line-height: 76px;
-  font-size: 60px;
-  padding: 8px;
+  margin-top: 20px;
+  height: 60px;
+  line-height: 44px;
+  font-size: 24px;
+  padding: 4px;
 
   background-color: white;
   opacity: 0.5;
   color: #373737;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+}
+
+.hashtag-photo .text-container p {
+  margin: 0;
 }
 
 .instagram-photo, 
@@ -250,7 +249,7 @@ body {
 }
 
 .registry-icon img {
-  max-width: 150px;
+  max-width: 75px;
 }
 
 /* Footer */
@@ -447,6 +446,22 @@ body {
 
   .sticky-wrapper {
     height: 60px;
+  }
+
+  .registry-icon img {
+    max-width: 150px;
+  }
+
+  .hashtag-photo .text-container {
+    margin-top: 120px;
+    height: 110px;
+    line-height: 86px;
+    font-size: 60px;
+    padding: 8px;
+  }
+
+  .hashtag-photo img {
+    max-width: 50px;
   }
 }
 
