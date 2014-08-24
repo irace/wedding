@@ -24,8 +24,9 @@ Lots of inspiration, both code and design-wise, taken blatantly from Zack Sultan
 Other dependencies:
 
 * jQuery
+  * [Waypoints](http://imakewebthings.com/jquery-waypoints/) – for the sticky navigation
+  * [Easing](http://gsgd.co.uk/sandbox/jquery/easing/) - for the scroll easing function
 * Underscore.js
-* [jQuery Waypoints](http://imakewebthings.com/jquery-waypoints/) for implementing the sticky navigation
 * Icons from [The Noun Project](http://thenounproject.com/)
 -->
 
@@ -44,12 +45,11 @@ Other dependencies:
     <![endif]-->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="stylesheets/styles.css">
-
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Parisienne">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="stylesheets/styles.css">
   </head>
 
   <body>
@@ -82,7 +82,7 @@ Other dependencies:
 
       <!-- Wedding -->
 
-      <div class="row">
+      <div class="row" id="wedding">
         <div class="col-md-6">
           <div class="info-box date">
             <p class="text-center">SATURDAY</p>
@@ -194,11 +194,12 @@ Other dependencies:
       <p>Photography by <a href="http://ambergress.com/">Amber Gress</a>&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;Bride and Groom icons designed by Ivan Colic from the <a href="http://thenounproject.com/">Noun Project</a></p>
     </div>
 
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="scripts/waypoints.min.js"></script>
     <script src="scripts/waypoints-sticky.min.js"></script>
+    <script src="scripts/jquery.easing.1.3.js"></script>
     <script src="scripts/scripts.js"></script>
   </body>
 </html>

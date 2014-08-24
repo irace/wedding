@@ -22,7 +22,7 @@ function attach_nav_scroll_handlers() {
 
     var target = $(this).attr("href");
     //animation
-    $('body, html').animate({ scrollTop: $(target).offset().top }, 700, 'swing', function () {});
+    $('body, html').animate({ scrollTop: $(target).offset().top }, 700, 'easeInOutQuart', function () {});
   });  
 }
 
