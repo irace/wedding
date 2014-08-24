@@ -1,7 +1,9 @@
 function enable_sticky_navigation() {
-  $('.nav').waypoint('sticky', {
-    offset: 60
-  });
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    $('.nav').waypoint('sticky', {
+      offset: 60
+    });
+  }
 }
 
 function populate_days_until() {

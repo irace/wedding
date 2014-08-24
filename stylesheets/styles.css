@@ -75,7 +75,6 @@ body {
 }
 
 .stuck {
-  position: fixed;
   top: 0;
 }
 
@@ -120,7 +119,7 @@ body {
 
 .venue {
   line-height: 45px;
-  font-size: 30px;
+  font-size: 22px;
   font-family: 'Pacifico', cursive;
 
   background-color: #F1C8C8;
@@ -262,11 +261,11 @@ body {
   height: 80px;
   line-height: 80px;
   background-color: #F1C8C8;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .footer img {
-  height: 80px;
+  height: 60px;
   margin-top: -7px;
 }
 
@@ -433,7 +432,7 @@ body {
   }
 
   .sticky-wrapper {
-    height: auto;
+    height: 60px;
   }
 
   .nav {
@@ -442,6 +441,10 @@ body {
     position: absolute;
     bottom: 0;
     padding: 0;
+  }
+
+  .stuck {
+    position: fixed;
   }
 
   .sticky-wrapper {
@@ -462,6 +465,18 @@ body {
 
   .hashtag-photo img {
     max-width: 50px;
+  }
+
+  .venue {
+    font-size: 22px;
+  }
+
+  .footer {
+    font-size: 30px;
+  }
+
+  .footer img {
+    height: 80px;
   }
 }
 
