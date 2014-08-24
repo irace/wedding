@@ -22,8 +22,9 @@ body {
   background: url(../images/0003A.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
-    -o-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  background-position: 50% 75%;
 }
 
 .overlay {
@@ -139,7 +140,10 @@ body {
 
 .hashtag-photo {
   background: url(../images/0285A.png);
-  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: 50% 75%;
   margin-bottom: 6px;
   height: 300px;
 }
