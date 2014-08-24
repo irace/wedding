@@ -191,7 +191,7 @@ Other dependencies:
     </div>
 
     <div class="attribution">
-      <p>Photography by <a href="http://ambergress.com/">Amber Gress</a>&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;Bride and Groom icons designed by Ivan Colic from the <a href="http://thenounproject.com/">Noun Project</a></p>
+      <p>Photography by <a href="http://ambergress.com/">Amber Gress</a>&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;Bride and Groom icons designed by <a href="http://www.thenounproject.com/Ivanisawesome">Ivan Colic</a> from the <a href="http://thenounproject.com/">Noun Project</a></p>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -201,6 +201,15 @@ Other dependencies:
     <script src="scripts/waypoints-sticky.min.js"></script>
     <script src="scripts/jquery.easing.1.3.js"></script>
     <script src="scripts/scripts.js"></script>
+    
+    <script>
+      $(function() {
+        enable_sticky_navigation();
+        populate_days_until();  
+        fetch_instagram_photos();
+        attach_nav_scroll_handlers();
+      });
+    </script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
