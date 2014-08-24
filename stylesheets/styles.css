@@ -171,12 +171,12 @@ body {
 .instagram-photo, 
 .instagram-all-link {
   background-color: lightgray;
-  font-size: 22px;
+  font-size: 14px;
   color: #545454;
 }
 
 .instagram-empty p {
-  padding: 20px;
+  padding: 10px;
 
   display: table-cell;
   vertical-align: middle;
@@ -477,6 +477,15 @@ body {
 
   .footer img {
     height: 80px;
+  }
+
+  .instagram-photo, 
+  .instagram-all-link {
+    font-size: 22px;
+  }
+
+  .instagram-empty p {
+    padding: 20px;
   }
 }
 
