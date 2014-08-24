@@ -1,8 +1,19 @@
 function enable_sticky_navigation() {
   if (window.matchMedia("(min-width: 768px)").matches) {
+    // Copied from Zack
+    
     $('.nav').waypoint('sticky', {
       offset: 60
     });
+
+    $(window).scroll(function() {
+      if ( $(this).scrollTop() > 50 ) {
+        $('.back-top').fadeIn(400);
+      } 
+      else {
+        $('.back-top').fadeOut(400);
+      }
+    }); 
   }
 }
 

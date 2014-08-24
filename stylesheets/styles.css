@@ -75,6 +75,23 @@ body {
   margin: 0 20px 0 20px;
 }
 
+/* Stolen from Zack */
+.back-top {
+  display: none;
+  position: absolute;
+  left: 10px;
+  bottom: 21px;
+}
+
+.back-top a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/elevator.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .stuck {
   top: 0;
 }
@@ -332,13 +349,13 @@ body {
   margin-bottom: 6px;
 }
 
-.rsvp-confirmation-title {
+.confirmation-title {
   margin: 60px 0 40px 0;
   font-size: 80px;
   font-family: 'Parisienne', cursive;
 }
 
-.rsvp-confirmation-home-button {
+.confirmation-home-button {
   height: 75px;
   line-height: 75px;
   font-size: 40px;
