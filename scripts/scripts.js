@@ -28,7 +28,9 @@ function attach_nav_scroll_handlers() {
 
     var target = $(this).attr("href");
 
-    $('body, html').animate({ scrollTop: $(target).offset().top }, 700, 'easeInOutQuart', function () {});
+    var nav_height = 60;
+
+    $('body, html').animate({ scrollTop: $(target).offset().top - nav_height }, 700, 'easeInOutQuart', function () {});
   });  
 }
 
