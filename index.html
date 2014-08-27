@@ -72,7 +72,7 @@ Other dependencies:
 
     <!-- Navigation -->
 
-    <div class="nav">
+    <div class="nav skrollable" data-0="background-color: rgba(255, 255, 255, .3);" data-250="background-color: rgba(255, 255, 255, .95);" style="background-color: rgba(255, 255, 255, 0.298039);">
       <div class="back-top">
         <a href="#header" title="Back to top" class=""></a>
       </div>
@@ -211,19 +211,14 @@ Other dependencies:
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="scripts/skrollr.js"></script>
     <script src="scripts/waypoints.min.js"></script>
     <script src="scripts/waypoints-sticky.min.js"></script>
     <script src="scripts/jquery.easing.1.3.js"></script>
-    <script src="scripts/scripts.js"></script>
-    
-    <script>
-      $(function() {
-        enable_sticky_navigation();
-        populate_days_until();  
-        fetch_instagram_photos();
-        attach_nav_scroll_handlers();
-      });
-    </script>
+
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/instagram.js"></script>
+    <script src="scripts/daysuntil.js"></script>
 
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
