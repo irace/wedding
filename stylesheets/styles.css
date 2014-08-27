@@ -27,12 +27,6 @@ body {
   background-position: 50% 75%;
 }
 
-.overlay {
-  background-color: rgba(0, 0, 0, 0.2);
-  height: 100%;
-  width: 100%;  
-}
-
 .header .text-container {
   position: absolute;
   top: 5%;
