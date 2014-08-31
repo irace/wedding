@@ -444,7 +444,7 @@ body {
 
   .date {
     height: 206px;
-    font-size: 80px;
+    font-size: 60px;
     line-height: 100px;
     padding: 0;
   }
@@ -509,7 +509,9 @@ body {
 
 /* Medium devices (desktops, 992px and up) */
 @media screen and (min-width: 992px) {
-
+  .date {
+    font-size: 80px;
+  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
