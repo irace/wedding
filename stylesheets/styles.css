@@ -427,6 +427,102 @@ body {
   display: block;
 }
 
+/* NYC */
+
+.nav.nyc {
+  position: relative;
+}
+
+.nyc-header {
+  height: 300px;
+
+  background: url(../images/0076A.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: 50% 55%;
+  margin-bottom: 6px;
+}
+
+.nyc-header-inner {
+  padding: 50px 0 50px 0;
+}
+
+.nyc-header .text-container {
+  margin: auto;
+  line-height: 100px;
+  width: 300px;
+  height: 200px;
+
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  color: white;
+  text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.7);
+
+  font-size: 36px;
+}
+
+.nyc-header .text-container p {
+  margin: 0;
+}
+
+.nyc-header .text-container .plan {
+  font-family: 'Lato', sans-serif;
+  word-spacing: 15px;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+.nyc-header .text-container .adventure {
+  font-family: 'Parisienne', cursive;
+  font-size: 64px;
+}
+
+.nyc-info-box {
+  background-color: #e7e7e7;
+  color: #272727;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.nyc-info-box h3 {
+  text-align: center;
+  margin-top: 0;
+  color: white;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  height: 45px;
+  line-height: 45px;
+}
+
+.nyc-info-box h3 span {
+  background-color: black;
+  padding: 0 20px 0 20px;
+}
+
+.nyc-info-box .number-container {
+  float: left;
+  height: 100%;
+  width: 150px;
+  padding: 20px 0 0 20px;
+}
+
+.nyc-info-box .text-container {
+  padding: 20px;
+  font-size: 16px;
+}
+
+.nyc-info-box img {
+  width: 150px;
+}
+
+.nyc-coming-soon {
+  margin-top: 30px;
+  font-size: 40px;
+  font-family: 'Parisienne', cursive;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
   .header {
@@ -504,6 +600,41 @@ body {
 
   .instagram-empty p {
     padding: 20px;
+  }
+
+  .nyc-header {
+    height: 400px;
+  }
+
+  .nyc-header-inner {
+    padding: 0;
+  }
+
+  .nyc-header .text-container {
+    position: absolute;
+    margin-top: 75px;
+    margin-left: 50px;
+    height: 250px;
+  }
+
+  .nyc-info-box .text-container {
+    margin-left: 175px;
+  }
+
+  .nyc-info-box h3 {
+    text-align: left;
+  }
+
+  .nyc-header .text-container .plan {
+    margin-top: 25px;
+  }
+
+  .nyc-header .text-container .adventure {
+    margin-bottom: 25px;
+  }
+
+  .nyc-coming-soon {
+    font-size: 60px;
   }
 }
 
