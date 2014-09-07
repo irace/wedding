@@ -1,6 +1,9 @@
 $(function () {
   var url_blacklist = [
-    'http://instagram.com/p/dGXQp1xEow/'
+    'http://instagram.com/p/dGXQp1xEow/',
+    'http://instagram.com/p/sncRYbH4a9/',
+    'http://instagram.com/p/slmdSgH4at/',
+    'http://instagram.com/p/sllwrXH4Zj/'
   ];
 
   $.getJSON('http://gramcracker.herokuapp.com/tag/tracyandbryan', function(posts) {
