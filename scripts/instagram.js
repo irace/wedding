@@ -1,14 +1,11 @@
 $(function () {
-  var url_blacklist = [
-    'http://instagram.com/p/dGXQp1xEow/',
-    'http://instagram.com/p/sncRYbH4a9/',
-    'http://instagram.com/p/slmdSgH4at/',
-    'http://instagram.com/p/sllwrXH4Zj/'
+  var url_whitelist = [
+    'http://instagram.com/p/sDgb5vvu0_/'
   ];
 
   $.getJSON('http://gramcracker.herokuapp.com/tag/tracyandbryan', function(posts) {
     var filtered_posts = _.filter(posts, function (post) {
-      return !_.contains(url_blacklist, post.link)
+      return _.contains(url_whitelist, post.link)
     });
 
     $('.instagram-photo').each(function (index) {
