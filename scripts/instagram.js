@@ -1,11 +1,23 @@
 $(function () {
-  var url_whitelist = [
-    'http://instagram.com/p/sDgb5vvu0_/'
+  var url_blacklist = [
+    'http://instagram.com/p/sncRYbH4a9/',
+    'http://instagram.com/p/slmdSgH4at/',
+    'http://instagram.com/p/sllwrXH4Zj/',
+    'http://instagram.com/p/slleyqn4Y8/',
+    'http://instagram.com/p/sllUqHn4Yh/',
+    'http://instagram.com/p/sllGxnn4YK/',
+    'http://instagram.com/p/slk5ukH4Xw/',
+    'http://instagram.com/p/slkM60H4Wn/',
+    'http://instagram.com/p/sljO-mH4VW/',
+    'http://instagram.com/p/slhe39n4Sz/',
+    'http://instagram.com/p/slhKicH4SX/',
+    'http://instagram.com/p/slgTqQH4RX/',
+    'http://instagram.com/p/dGXQp1xEow/'
   ];
 
   $.getJSON('http://gramcracker.herokuapp.com/tag/tracyandbryan', function(posts) {
     var filtered_posts = _.filter(posts, function (post) {
-      return _.contains(url_whitelist, post.link)
+      return !_.contains(url_blacklist, post.link)
     });
 
     $('.instagram-photo').each(function (index) {
