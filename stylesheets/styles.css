@@ -485,21 +485,36 @@ body {
   margin-top: 20px;
 }
 
-.nyc-info-box h3 {
+
+.nyc-info-box h3,
+.nyc-info-box h4 {
   text-align: center;
   margin-top: 0;
   color: white;
-
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+}
+
+.nyc-info-box h3 {
   height: 45px;
   line-height: 45px;
 }
 
-.nyc-info-box h3 span {
+.nyc-info-box h4 {
+  height: 40px;
+  line-height: 40px;
+}
+
+.nyc-info-box h3 span,
+.nyc-info-box h4 span {
   background-color: black;
   padding: 0 20px 0 20px;
 }
+
+
+
+
+
 
 .nyc-info-box .number-container {
   float: left;
@@ -621,7 +636,8 @@ body {
     margin-left: 175px;
   }
 
-  .nyc-info-box h3 {
+  .nyc-info-box h3,
+  .nyc-info-box h4 {
     text-align: left;
   }
 
