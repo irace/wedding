@@ -1,22 +1,18 @@
 $(function () {
   var url_blacklist = [
-    'http://instagram.com/p/sncRYbH4a9/',
-    'http://instagram.com/p/slmdSgH4at/',
-    'http://instagram.com/p/sllwrXH4Zj/',
-    'http://instagram.com/p/slleyqn4Y8/',
-    'http://instagram.com/p/sllUqHn4Yh/',
-    'http://instagram.com/p/sllGxnn4YK/',
-    'http://instagram.com/p/slk5ukH4Xw/',
-    'http://instagram.com/p/slkM60H4Wn/',
-    'http://instagram.com/p/sljO-mH4VW/',
-    'http://instagram.com/p/slhe39n4Sz/',
-    'http://instagram.com/p/slhKicH4SX/',
-    'http://instagram.com/p/slgTqQH4RX/',
-    'http://instagram.com/p/dGXQp1xEow/',
     'https://instagram.com/p/sncRYbH4a9/',
     'https://instagram.com/p/slmdSgH4at/',
     'https://instagram.com/p/sllwrXH4Zj/',
-    'https://instagram.com/p/slleyqn4Y8/'
+    'https://instagram.com/p/slleyqn4Y8/',
+    'https://instagram.com/p/sllUqHn4Yh/',
+    'https://instagram.com/p/sllGxnn4YK/',
+    'https://instagram.com/p/slk5ukH4Xw/',
+    'https://instagram.com/p/slkM60H4Wn/',
+    'https://instagram.com/p/sljO-mH4VW/',
+    'https://instagram.com/p/slhe39n4Sz/',
+    'https://instagram.com/p/slhKicH4SX/',
+    'https://instagram.com/p/slgTqQH4RX/',
+    'https://instagram.com/p/dGXQp1xEow/',
   ];
 
   $.getJSON('http://gramcracker.herokuapp.com/tag/tracyandbryan', function(posts) {
