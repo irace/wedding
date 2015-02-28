@@ -14,7 +14,9 @@ $(function () {
     'http://instagram.com/p/slgTqQH4RX/',
     'http://instagram.com/p/dGXQp1xEow/',
     'https://instagram.com/p/sncRYbH4a9/',
-    'https://instagram.com/p/slmdSgH4at/'
+    'https://instagram.com/p/slmdSgH4at/',
+    'https://instagram.com/p/sllwrXH4Zj/',
+    'https://instagram.com/p/slleyqn4Y8/'
   ];
 
   $.getJSON('http://gramcracker.herokuapp.com/tag/tracyandbryan', function(posts) {
