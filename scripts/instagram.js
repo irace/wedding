@@ -12,7 +12,9 @@ $(function () {
     'http://instagram.com/p/slhe39n4Sz/',
     'http://instagram.com/p/slhKicH4SX/',
     'http://instagram.com/p/slgTqQH4RX/',
-    'http://instagram.com/p/dGXQp1xEow/'
+    'http://instagram.com/p/dGXQp1xEow/',
+    'http://instagram.com/p/sncRYbH4a9/',
+    'http://instagram.com/p/slmdSgH4at/'
   ];
 
   $.getJSON('http://gramcracker.herokuapp.com/tag/tracyandbryan', function(posts) {
