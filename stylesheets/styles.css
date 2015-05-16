@@ -140,7 +140,7 @@ body {
   font-size: 70px;
   line-height: 90px;
 
-  background-color: #525252;
+  background-color: #333333;
   color: white;
   font-family: 'Lato', sans-serif;
 }
@@ -181,6 +181,14 @@ body {
   margin: 0;
 }
 
+.instagram-row > .col-sm-6.left {
+  padding-left: 0;
+}
+
+.instagram-row > .col-sm-6.right {
+  padding-right: 0;
+}
+
 .instagram-photo, 
 .instagram-all-link {
   background-color: lightgray;
@@ -208,6 +216,11 @@ body {
   height: 100%;
   width: 100%;
   display: table;
+}
+
+#twitter-widget-0 {
+  width: 100% !important;
+  height: 574px !important;
 }
 
 .photo-col {
@@ -244,7 +257,7 @@ body {
   width: 100%;
   margin-top: 26px;
   height: 2px;
-  background-color: #525252;
+  background-color: #333333;
 }
 
 .registry-icons-row {
