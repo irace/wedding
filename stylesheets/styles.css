@@ -220,9 +220,6 @@ body {
 
 #twitter-widget-0 {
   width: 100% !important;
-  height: 574px !important;
-  margin: 0;
-  padding: 0;
 }
 
 .photo-col {
@@ -526,11 +523,6 @@ body {
   padding: 0 20px 0 20px;
 }
 
-
-
-
-
-
 .nyc-info-box .number-container {
   float: left;
   height: 100%;
@@ -673,6 +665,10 @@ body {
 @media screen and (min-width: 992px) {
   .date {
     font-size: 80px;
+  }
+
+  #twitter-widget-0 {
+    height: 580px !important;
   }
 }
 
