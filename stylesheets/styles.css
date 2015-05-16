@@ -221,6 +221,8 @@ body {
 #twitter-widget-0 {
   width: 100% !important;
   height: 574px !important;
+  margin: 0;
+  padding: 0;
 }
 
 .photo-col {
