@@ -218,10 +218,6 @@ body {
   display: table;
 }
 
-#twitter-widget-0 {
-  width: 100% !important;
-}
-
 .photo-col {
   margin-bottom: 6px;
 }
@@ -658,6 +654,10 @@ body {
 
   .nyc-coming-soon {
     font-size: 60px;
+  }
+
+  #twitter-widget-0 {
+    width: 100% !important;
   }
 }
 
