@@ -1,4 +1,4 @@
-$(function () {
+function instagram_posts (callback) {
   var url_blacklist = [
     'https://instagram.com/p/sncRYbH4a9/',
     'https://instagram.com/p/slmdSgH4at/',
@@ -20,24 +20,7 @@ $(function () {
       return !_.contains(url_blacklist, post.link)
     });
 
-    $('.instagram-photo').each(function (index) {
-      if (index < filtered_posts.length) {
-        var post = filtered_posts[index];
-
-        $(this).html('<a href="' + post.link + '"><img src="' + post.photo + '"></a>');
-      }
-    });
-
-    var make_photo_cols_square = function () {
-      $('.photo-col').each(function (index) {
-        var $el = $(this);
-
-        // This won't update when say, a browser window is resized
-        $el.css({ 'height': $el.width() + 'px' });
-      });
-    };
-
-    make_photo_cols_square();
-    $(window).resize(make_photo_cols_square);
+    callback(filtered_posts);
   });
-});
+}
+

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tracy and Bryan</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Parisienne">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+
+    <link rel="icon" type="image/png" href="../images/favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="../images/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="../images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="../images/favicon-32x32.png" sizes="32x32">
+
+    <style>
+      body {
+        background-color: #333333;
+      }
+
+      .nav {
+        background-color: white;
+      }
+
+      .photos {
+        margin-top: 20px;
+      }
+
+      .photo {
+        padding: 5px;
+      }
+
+      .photo img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .attribution,
+      .attribution a:link, 
+      .attribution a:visited, 
+      .attribution a:hover, 
+      .attribution a:active {
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+
+    <div class="docked nav">
+      <div class="nav-item"><a href="../index.html#wedding">WEDDING</a></div>
+      <span class="glyphicon glyphicon-heart"></span>
+      <div class="nav-item"><a href="../rsvp">RSVP</a></div>
+      <span class="glyphicon glyphicon-heart"></span>
+      <div class="nav-item"><a href="#">NYC</a></div>
+      <span class="glyphicon glyphicon-heart"></span>
+      <div class="nav-item"><a href="../index.html#registry">REGISTRY</a></div>
+      <span class="glyphicon glyphicon-heart"></span>
+      <div class="nav-item"><a href="mailto:bryan@irace.me?subject=OMG%20I%20CAN'T%20WAIT%20FOR%20YOUR%20WEDDING">CONTACT</a></div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="photos col-md-12">
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <p class="text-center"><img src="../images/bride.png">&nbsp;See you in <span id="days-until"></span> days!&nbsp;<img src="../images/groom.png"></p>
+    </div>
+
+    <div class="attribution">
+      <p>Photography by <a href="http://ambergress.com/">Amber Gress</a>&nbsp;<span class="glyphicon glyphicon-heart"></span>&nbsp;&nbsp;Bride and Groom icons designed by <a href="http://www.thenounproject.com/Ivanisawesome">Ivan Colic</a> from the <a href="http://thenounproject.com/">Noun Project</a></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <script src="../scripts/daysuntil.js"></script>
+    <script src="../scripts/instagram.js"></script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-22036475-3', 'auto');
+      ga('send', 'pageview');
+
+      $(function () {
+        instagram_posts(function (posts) {
+          _.each(posts, function (post) {
+            $('.photos').append('<div class="col-md-6 photo"><img src="' + post.photo + '"></div>');
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
