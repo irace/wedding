@@ -189,30 +189,34 @@ body {
   padding-right: 0;
 }
 
+.gif-photo,
 .instagram-photo, 
-.instagram-all-link {
+.more-photos-link {
   background-color: lightgray;
   font-size: 14px;
   color: #545454;
 }
 
-.instagram-empty p {
+.instagram-empty p,
+.more-photos-link p {
   padding: 10px;
 
   display: table-cell;
   vertical-align: middle;
 }
 
-.instagram-all-link:hover {
+.more-photos-link:hover {
   background-color: #c5c5c5;
 }
 
-.instagram-photo img {
+.instagram-photo img,
+.gif-photo img {
   height: 100%;
   width: 100%;
 }
 
-.instagram-empty {
+.instagram-empty,
+.more-photos-link {
   height: 100%;
   width: 100%;
   display: table;
@@ -612,7 +616,7 @@ body {
   }
 
   .instagram-photo, 
-  .instagram-all-link {
+  .more-photos-link {
     font-size: 22px;
   }
 
