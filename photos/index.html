@@ -110,7 +110,7 @@
       $(function () {
         instagram_posts(function (posts) {
           _.each(posts, function (post) {
-            $('.photos').append('<div class="col-md-6 photo"><img src="' + post.photo + '"></div>');
+            $('.photos').append('<div class="col-md-6 photo"><a href="' + post.link + '"><img src="' + post.photo + '"></a></div>');
           });
         });
       });
